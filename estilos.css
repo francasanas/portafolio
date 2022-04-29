@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: url(./imagenes/background8bit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*NAVBAR*/
+
+.heder{
+    height: 70%;
+}
+.navbarContainer{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navbarLogo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navbar_LogoImg{
+    width: 80px;
+    height: 100%;
+}
+.linksContainer{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: right;
+    padding-bottom: 50px;
+}
+.links{
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+.navlink{
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.blink{
+    text-decoration: none;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+}
+
+.navlink:hover .blink{ 
+    color:red;
+    animation: blink 0.6s steps(2, end) infinite;
+    transform: translate(20px);
+}
+
+.navlink:hover i{ 
+    color:red;
+}
+
+@keyframes blink{ 
+
+    from {
+      color: rgb(240, 14, 14);
+     }
+     to {
+        color: rgb(47, 0, 0);
+     }
+
+}
+
+.fa-caret-right{
+    color: transparent;
+    margin-top: 3px;
+}
+
+.fa-caret-right:hover{ 
+    color:red;
+    margin: 3px;
+}
+
+/*INICIO*/
+.inicio_Contenedor{
+    background-color: rgba(0, 0, 0, 0.49);
+    width: 100%;
+}
+
+.presentacion_Container{
+    padding-top: 2%;
+    height: 30%;
+}
+.titulo_Principal{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+
+.separador{
+    height: 5px;
+    background-color: rgb(147, 147, 147);
+}
+
+
+/*SOBREMI*/
+.sobremi-Contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-image: url(./imagenes/background8bitAtardecer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tituloContenedorSobreMi{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.tituloSobreMi{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+.contenedorFoto{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.fotoPerfilContenedor{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.035);
+    border-radius: 30%;
+    backdrop-filter: blur(30px);
+}
+.perfilFoto{
+    width: 300px;
+    height: 300px;
+}
+.sobremiDatosContenedor{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 40px;
+}
+.sobremiDatos{
+    align-items: center;
+    width: 50%;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+.contenedorDescargaCV{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 8%;
+}
+
+.boton-cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.652));
+}
+
+.boton-cv:hover{
+    filter: drop-shadow(0 0px 0px rgb(0, 0, 0));
+    transform: translateY(10px);
+}
+
+/*PORTAFOLIO*/
+.portafolio_Contenedor{
+    height: 600px;
+    background-image: url(./imagenes/fondoestrellas8px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tituloContenedorPortafolio{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.tituloPortafolio{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+.contenedorCardsPortafolio{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+.contenedorTrabajoDesarrolloWeb{
+    width: 300px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.035);
+    backdrop-filter: blur(30px);
+}
+.contenedorImgDesarrolloWeb{
+    width: 300px;
+    height: 70%;
+}
+.imagenDesarrolloWeb{
+    height: 100%;
+    width: 100%;
+}
+.contenedorReactJs{
+    width: 300px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.035);
+    backdrop-filter: blur(30px);
+}
+.contenedorImgReactJs{
+    width: 300px;
+    height: 70%;
+}
+.imagenReactJs{
+    height: 100%;
+    width: 100%;
+}
+.contenedorIclassPadre{
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.contenedor_Iclass a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.contenedor_IclassDos a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*CONTACTO*/
+.contacto_Contenedor{
+    background-image: url(./imagenes/backgroundMinecraft2.0.jpg);
+    height: 400px;
+}
+
+.contenedorContacto{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.tituloContacto{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+.contenedorLinks{
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact__item {
+    padding: 18px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.linksContacto{
+    display: flex;
+    gap: 80px;
+}
+
+.linksContacto a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
+
+.far, .fab, .fa{
+    padding-left: 25px;
+}
+
+.fa-envelope{
+    color: red;
+    width: 100px;
+    font-size: 50px;
+}
+
+.fa-github{
+    color: black;
+    width: 100px;
+    font-size: 50px;
+}
+
+.fa-instagram{
+    color: rgb(131, 64, 10);
+    color: rgb(255, 255, 255);
+    width: 100px;
+    font-size: 50px;
+}
+
+.fa-linkedin-in{
+    color: #0e76a8;
+    width: 100px;
+    font-size: 50px;
+}
